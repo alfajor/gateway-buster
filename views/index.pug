@@ -1,0 +1,20 @@
+doctype html
+html
+    include partials/head.pug
+
+    body 
+        div(class="heading-text")
+            h1 Gateway Buster
+            h2 All the gateways fit to bust!
+            p Enter a NY Times article URL and get the complete pre-rendered article back. Works on most articles ;).
+
+        div(class="form-wrapper")
+            form#search-form(method="post" action="/")
+                input(type="text" placeholder="https://www.nytimes.com/article-i-want-to-read.html" name="result")
+                button(type="submit" class="btn-submit") Submit
+
+        div(class="article")
+            p= data
+
+        div(class="message")
+            p= message

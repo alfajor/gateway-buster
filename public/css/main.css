@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Olondona;
+    src: url("./fonts/Olondona.otf") format("opentype");
+}
+
+:root {
+    --button-color: #222;
+}
+
+body {
+    font-family: 'Helvetica', 'arial'
+}
+
+h1 {
+    font-family: 'Olondona';
+    font-size: 60px;
+}
+
+.heading-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#search-form input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+}
+
+button[type="submit"] {
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    padding: 6px;
+    background-color: var(--button-color);
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.message, .article {
+    display: flex;
+    justify-content: center;
+}
+
+.article {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.7;
+}
